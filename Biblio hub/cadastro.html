@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Biblioteca</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .top-bar {
+            background-color: #9cda9c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 40px;
+            width: 100%;
+            position: relative;
+        }
+
+        .logo-ifb {
+            height: 60px;
+            position: absolute;
+            left: 30px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        nav {
+            background-color: #2c7c2c;
+            padding: 5px;
+            text-align: right;
+            font-weight: bold;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            background-color: #9cda9c;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .aviso {
+            background-color: #f8d7da;
+            color: #b90000;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        .btn-enviar {
+            background-color: #2c7c2c;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn-enviar:hover {
+            background-color: #1f5c1f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="img/logo-ifb.png" alt="Instituto Federal Brasília" class="logo-ifb">
+            <h1>CADASTRO BIBLIOTECA</h1>
+        </div>
+        <nav>
+            <div class="nav-bar">BIBLIOTECA</div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <h2>Cadastro de Alunos</h2>
+            <form id="cadastroForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="cpf">CPF ou Matrícula:</label>
+                <input type="text" id="cpf" name="cpf" required>
+                
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <div class="aviso">Aviso! Antes de clicar em enviar, certifique-se de que inseriu todos os dados</div>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Formulário enviado com sucesso!");
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

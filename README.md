@@ -22,8 +22,9 @@ O objetivo do **Biblio Hub** é integrar e automatizar os processos de cadastro,
 ## Licença
 
 Este projeto está licenciado sob a licença **MIT** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-##Documentação do Projeto
+
+## Documentação do Projeto
 https://docs.google.com/document/d/1ax-CfpwFqp0FJYDGVjLmjH9F3WTw26qhUHDNqpyvkIg/edit?usp=sharing
 
-##Apresentação do Projeto
+## Apresentação do Projeto
 https://www.canva.com/design/DAGRteQ07pc/9tlHMnxUvmEBXVppHyQCjA/edit?utm_content=DAGRteQ07pc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
